@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th" data-mode="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies with Lanna 💙🍿</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Mitr:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">← กลับหน้าหลัก</a>
+        <div class="nav-right">
+            <button class="mode-btn" id="modeToggle" aria-label="Toggle Theme"></button>
+        </div>
+    </nav>
+
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="marquee-lights" id="marqueeLights"></div>
+                <span class="hero-badge">NOW SHOWING</span>
+                <h1 class="hero-title">หนังที่อยากดู 🍿</h1>
+                <p class="subtitle">นาอยากดูเรื่องไหน ไปดูด้วยกันนะ!</p>
+
+                <div id="selection-box" class="glass-box">
+                    <div class="step-row">
+                        <span class="step-num">1</span>
+                        <p class="step-text">เลือกว่าจะไปดูที่ไหนดี 👇</p>
+                    </div>
+
+                    <div class="cinema-options">
+                        <button class="cinema-card" data-cinema="major">
+                            <span class="cinema-name">Major Cineplex</span>
+                            <span class="cinema-branch">(เซ็นเฟส)</span>
+                        </button>
+                        <button class="cinema-card" data-cinema="sf">
+                            <span class="cinema-name">SF Cinema</span>
+                            <span class="cinema-branch">(เมญ่า)</span>
+                        </button>
+                    </div>
+
+                    <div class="step-row" style="margin-top: 22px;">
+                        <span class="step-num">2</span>
+                        <p class="step-text">ไปวันไหน กี่โมงดีครับคุณผู้หญิง 📅</p>
+                    </div>
+                    <div class="input-group mobile-stack">
+                        <input type="text" id="date-select" placeholder="เลือกวันที่ว่าง...">
+                        <input type="text" id="time-select" placeholder="เลือกเวลา...">
+                    </div>
+
+                    <button id="show-movie-btn" class="btn-primary" style="margin-top: 22px; width: 100%;">
+                        กดเช็ครอบหนัง ✨
+                    </button>
+                </div>
+
+                <div class="discord-box">
+                    <div class="step-row">
+                        <span class="step-num">3</span>
+                        <p class="step-text">ได้เรื่องแล้ว แคปจอมาเลยยยยย 👇</p>
+                    </div>
+
+                    <div class="input-group mobile-stack">
+                        <label for="image-upload" class="btn-upload" title="แนบรูปที่แคปมา">
+                            <span>📷 แนบรูปตั๋ว/หนัง</span>
+                        </label>
+                        <input type="file" id="image-upload" accept="image/*" style="display: none;">
+
+                        <input type="text" id="discord-msg" placeholder="พิมพ์บอกพี่ตรงนี้ได้เลยน้องง...">
+                    </div>
+
+                    <button id="send-discord-btn" class="btn-discord" style="margin-top: 15px; width: 100%;">
+                        ส่งตั๋วให้กัสเลย! 💌💙
+                    </button>
+
+                    <div class="preview-wrapper" id="preview-wrapper">
+                        <img id="image-preview" src="" alt="Preview">
+                        <button id="remove-image-btn" class="remove-btn" title="ลบรูป">×</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="movie.js"></script>
+</body>
+</html>
