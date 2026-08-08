@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (showMovieBtn) {
         showMovieBtn.addEventListener('click', () => {
             if (!selectedCinemaValue) {
-                alert("จิ้มเลือกโรงหนังด้านบนก่อนนะลานนา 🍿💙");
+                alert("จิ้มเลือกโรงหนังด้านบนก่อนนะน้องงง 🍿💙");
                 return; 
             }
 
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const file = fileInput.files[0];
 
             if (text === "" && !file) {
-                alert("พิมพ์ข้อความหรือแนบรูปมาก่อนส่งนะคนเก่ง 😆💙");
+                alert("พิมพ์ข้อความหรือแนบรูปมาก่อนส่งนะ  😆💙");
                 return;
             }
 
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const selectedDate = dateSelect.value ? dateSelect.value : "ไม่ได้ระบุ";
             const selectedTime = timeSelect.value ? timeSelect.value : "ไม่ได้ระบุ";
 
-            let displayMsg = text ? `ข้อความจากลานนา: ${text} 💌` : `ลานนาส่งรูปมาให้ดูงับ! 📷💙`;
+            let displayMsg = text ? `ข้อความ: ${text} 💌` : ` ส่งรูปมาให้ดูงับ! 📷💙`;
             
             const embedCard = {
                 title: "🍿 ลานนาอยากไปดูหนัง!",
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     { name: "📅 วันที่", value: selectedDate, inline: true },
                     { name: "⏰ เวลา", value: selectedTime, inline: true }
                 ],
-                footer: { text: "ระบบจองตั๋ว VIP ของกัส 💙" },
+                footer: { text: "ระบบจองตั๋ว  ของกัส 💙" },
                 timestamp: new Date().toISOString()
             };
 
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }).catch(err => {
                 console.error(err);
-                alert("เน็ตหลุดป่าวลานนา ลองกดส่งใหม่ดูนะ");
+                alert("เน็ตหลุดป่าว  ลองกดส่งใหม่ดูนะ");
             }).finally(() => {
                 sendBtn.innerText = originalBtnText;
                 sendBtn.disabled = false;
