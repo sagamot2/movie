@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let displayMsg = text ? `ข้อความ: ${text} 💌` : ` ส่งรูปมาให้ดูงับ! 📷💙`;
             
             const embedCard = {
-                title: "🍿 ลานนาอยากไปดูหนัง!",
+                title: "🍿 ,มีคนอยากไปดูหนัง!",
                 description: displayMsg,
                 color: 3718584, 
                 fields: [
