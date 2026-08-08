@@ -12,28 +12,11 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="member-pill" id="memberPill" style="display:none;">
-            <span class="member-pill-name" id="memberPillName"></span>
-            <button type="button" class="member-logout-btn" id="memberLogoutBtn" title="ออกจากระบบ">×</button>
-        </div>
+        <div></div>
         <div class="nav-right">
             <button class="mode-btn" id="modeToggle" aria-label="Toggle Theme"></button>
         </div>
     </nav>
-
-    <div class="member-overlay" id="memberOverlay">
-        <div class="member-card">
-            <span class="hero-badge">MEMBER ONLY</span>
-            <h2 class="member-title">มาสมัครสมาชิกกันก่อนน้า 💌</h2>
-            <p class="member-subtitle">กรอกชื่อกับเบอร์โทรไว้ครั้งเดียว ครั้งหน้าเข้ามาก็จำได้เลย</p>
-            <input type="text" id="memberNameInput" class="member-input" placeholder="ชื่อเล่น..." maxlength="40">
-            <input type="tel" id="memberPhoneInput" class="member-input" placeholder="เบอร์โทร เช่น 0812345678" maxlength="10">
-            <p class="member-error" id="memberError" style="display:none;"></p>
-            <button type="button" id="memberSubmitBtn" class="btn-primary" style="width:100%; margin-top: 6px;">
-                เข้าสู่ระบบ / สมัครสมาชิก
-            </button>
-        </div>
-    </div>
 
     <div class="background-effects">
         <div class="glow-orb orb-1"></div>
@@ -102,6 +85,15 @@
                         <img id="image-preview" src="" alt="Preview">
                         <button id="remove-image-btn" class="remove-btn" title="ลบรูป">×</button>
                     </div>
+                </div>
+
+                <div class="achievements-box" id="achievements-box">
+                    <div class="step-row">
+                        <span class="step-num">🏆</span>
+                        <p class="step-text">แต้มสะสมดูหนัง</p>
+                    </div>
+                    <p class="achievements-progress" id="achievements-progress"></p>
+                    <div class="achievements-grid" id="achievements-grid"></div>
                 </div>
             </div>
         </section>
