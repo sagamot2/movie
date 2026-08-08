@@ -48,15 +48,13 @@ body {
     overflow-x: hidden;
     position: relative;
 }
-
-/* ---------- ambient marquee glow ---------- */
+ 
 .background-effects { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; overflow: hidden; pointer-events: none; }
 .glow-orb { position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.35; animation: float 14s infinite alternate ease-in-out; }
 .orb-1 { width: 420px; height: 420px; background: var(--velvet2); top: 5%; left: -120px; }
 .orb-2 { width: 320px; height: 320px; background: var(--gold); bottom: 5%; right: -60px; animation-delay: -7s; }
 @keyframes float { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(35px, 45px) scale(1.12); } }
-
-/* ---------- nav ---------- */
+ 
 .navbar {
     position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
     display: flex; align-items: center; justify-content: space-between;
@@ -93,8 +91,7 @@ body {
 main { min-height: 100vh; display: flex; flex-direction: column; padding-top: 58px; position: relative; z-index: 10; }
 .hero { flex: 1; display: flex; align-items: center; justify-content: center; padding: 36px 15px 50px; text-align: center; }
 .hero-inner { max-width: 600px; width: 100%; animation: fadeUp 0.7s ease both; }
-
-/* ---------- marquee title ---------- */
+ 
 .marquee-lights { display: flex; justify-content: center; gap: 7px; margin-bottom: 14px; }
 .marquee-lights .bulb {
     width: 6px; height: 6px; border-radius: 50%;
@@ -122,8 +119,7 @@ main { min-height: 100vh; display: flex; flex-direction: column; padding-top: 58
 .subtitle { color: var(--text3); font-size: 0.95rem; margin-bottom: 28px; font-family: 'Mitr', sans-serif; }
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-
-/* ---------- ticket cards ---------- */
+ 
 .glass-box, .discord-box {
     background: var(--card-bg);
     backdrop-filter: blur(16px);
@@ -204,8 +200,7 @@ main { min-height: 100vh; display: flex; flex-direction: column; padding-top: 58
 }
 .input-group input::placeholder { color: var(--text3); }
 .input-group input:focus { border-color: var(--gold); box-shadow: 0 0 10px var(--gold-dim); }
-
-/* ---------- buttons ---------- */
+ 
 .btn-primary, .btn-discord {
     background: linear-gradient(135deg, var(--velvet), var(--velvet2));
     color: var(--gold-bright);
